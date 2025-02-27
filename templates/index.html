@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<!--LINK JQUERY-->
+
+<!--PERSONAL SCRIPT JavaScript-->
+
+</head>
+<body>
+    <!-- <header>This is my HTML file!</header> -->
+    <form id='trade_form' onsubmit="return false;">
+        <!-- form containing a number input and a submit button-->
+        <input type="number" id="trade_amount" name="trade_amount" min="1" max="100" required>
+        <input type="submit" id="buy_btn" value="Buy">
+        <input type="submit" id="sell_btn" value="Sell">
+        <input type="hidden" id="csrf_token" name="csrf_token" value="{{ csrf_token() }}" />
+    </form>
+
+    <script type="text/javascript" src="static/user_orders.js"></script>
+</body>

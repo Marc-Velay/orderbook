@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+
+venv/
+.vscode/
+
+server
