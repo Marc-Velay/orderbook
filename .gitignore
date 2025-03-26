@@ -34,5 +34,8 @@
 
 venv/
 .vscode/
+boost/
 
+# Remove compiled exec files
 server
+ob_exec
