@@ -67,7 +67,10 @@ class OrderBook {
         Order* sell_tail;
 
         int add_order(Order* order);
+        int remove_order(Order* order);
+        Order* execute_order(Order* order);
         void OrderTree(string side);
         void OrderTreeValue(string side);
+        void OrderTreeQuantity(string side);
 
 };
